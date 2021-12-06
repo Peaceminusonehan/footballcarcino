@@ -1,0 +1,182 @@
+/*----------navbar-----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar ul li a:visited,.navbar ul li a:link{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar h1{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+.navbar ul li{
+    list-style: none;
+    float: left;
+    margin-right: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    opacity: 0.5;
+    font-size: 18px;
+    
+    
+}
+.navbar ul li:hover{
+opacity: 1;
+}
+.navbar{
+    margin-bottom: 2rem;
+}
+body{
+  
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://media.istockphoto.com/photos/abstract-black-background-picture-id1271067395?k=20&m=1271067395&s=170667a&w=0&h=GyL77zH2f4CpqGtt4TI0ozQI6PWmDs-MJCQLO1NZ62I=");
+    background-size: cover;
+
+}
+/*----------header-----*/
+.head h1 span{
+    border-bottom: 4px solid #18d26e;
+    color: white;
+}
+.headcol1{
+    margin-bottom: 2rem;
+}
+.head{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+.head h1{
+    margin-bottom: 1rem;
+    color: white;
+    
+}
+.head p{
+    font-size: 27px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 30px;
+    opacity: 0.7;
+    
+}
+.head a:visited,.head a:link{
+    text-decoration:none ;
+    color: inherit;
+     border: none;
+     outline: none;
+     border-radius: 1.5rem;
+     padding: 10px 20px;
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+     font-weight: bolder;
+     background-color: #18d26e;
+     transition: 0.5s;
+     
+}
+.head a:hover{
+background-color:  #34e5a6;
+}
+.img{
+    border-radius: 1rem;
+}
+/*----------feature-----*/
+.background{
+    background-color: white;
+    background-size: cover;
+}
+.span{
+   opacity: 0.5;
+}
+.feature{
+    padding: 5rem 0;
+    
+}
+
+.feature_top{
+    margin-bottom: 4rem;
+}
+.featurea:visited,.featurea:link{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bolder;
+}
+.icon{
+   font-size: 2rem;
+   font-weight: 0;
+}
+.box{
+    padding: 2rem;
+    background-color: #EBEBFF;
+    border-radius: 5px;
+  
+}
+/*---------------counter-----------------------*/
+.spancount{
+    display: block;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.counter{
+    background-color:#EBEBFF;
+}
+.count{
+    text-align: center;
+}
+.box2{
+    padding: 0 3rem 2rem 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color:white ;
+}
+/*=================role*/
+.rule{
+    background-color: white;
+}
+.mark{
+    color:#18d26e ;
+}
+.smile{
+    font-size: 1.7rem;
+    margin-top: -1rem;
+    background-color:#18d26e ;
+    padding: 15px;
+    border-radius: 3rem;
+    color: white;
+}
+.rule1{
+   padding: 4rem 0;
+   font-style: italic!important;
+   font-size: 17px;
+}
+.h2rule{
+    font-weight: bolder;
+}
+/*====================gallery*/
+.gallery{
+    background-color: white;
+}
+
+.footbox{
+    padding: 4rem;
+    text-align: center;
+    color: white;
+}
+.footspan{
+    color: #18d26e;
+}
+.cucer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #18d26e;
+    padding: 15px;
+    border-radius: 2rem;
+    z-index: 3;
+}
+.topa:visited,.topa:link{
+     text-decoration: none;
+     color: inherit;
+}
