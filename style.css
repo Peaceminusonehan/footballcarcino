@@ -13,6 +13,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
     color: white;
+    z-index: 5;
 }
 .navbar ul li{
     list-style: none;
@@ -24,18 +25,34 @@
     font-size: 18px;
     
     
+    
 }
+
 .navbar ul li:hover{
 opacity: 1;
 }
-.navbar{
+.hamlay{
+    display: none;
     margin-bottom: 2rem;
 }
-body{
-  
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://media.istockphoto.com/photos/abstract-black-background-picture-id1271067395?k=20&m=1271067395&s=170667a&w=0&h=GyL77zH2f4CpqGtt4TI0ozQI6PWmDs-MJCQLO1NZ62I=");
-    background-size: cover;
 
+.navbar{
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+   border-bottom: 1px solid ;
+    z-index: 4;
+    background-color:black ;
+  
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("istockphoto-1271067395-170667a.jpg");;
+    background-color: black;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
 }
 /*----------header-----*/
 .head h1 span{
@@ -54,12 +71,13 @@ body{
     color: white;
     
 }
-.head p{
-    font-size: 27px;
+.headp{
+    font-size: 26px;
     font-weight: 500;
     color: white;
     margin-bottom: 30px;
     opacity: 0.7;
+    display: inline-block;
     
 }
 .head a:visited,.head a:link{
@@ -81,6 +99,22 @@ background-color:  #34e5a6;
 }
 .img{
     border-radius: 1rem;
+    
+}
+.imgflot{
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes move {
+    from{
+        transform: translateY(-70px)
+    }
+    to{
+        transform: translateY(30px)
+    }
 }
 /*----------feature-----*/
 .background{
