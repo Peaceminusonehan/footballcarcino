@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /*----------navbar-----*/
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .navbar ul li a:visited,.navbar ul li a:link{
     text-decoration: none;
@@ -11,7 +19,9 @@
 .sticky{
     background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 1px solid black;
-    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5git s ease-in;
+    -o-transition: all 0.5git s ease-in;
+    transition: all 0.5git s ease-in;
 }
 .navbar h1{
     font-size: 30px;
@@ -44,8 +54,12 @@ opacity: 1;
 .navbar{
     margin-bottom: 2rem;
     position: sticky;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     top: 0;
     z-index: 4;
   
@@ -54,12 +68,15 @@ body::-webkit-scrollbar {
     display: none;
 }
 body{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7))),url("istockphoto-1271067395-170667a.jpg");
+    background-image: -o-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("istockphoto-1271067395-170667a.jpg");
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("istockphoto-1271067395-170667a.jpg");;
     background-color: black;
     background-size: cover;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
@@ -103,6 +120,8 @@ body{
      color: white;
      font-weight: bolder;
      background-color: #18d26e;
+     -webkit-transition: 0.5s;
+     -o-transition: 0.5s;
      transition: 0.5s;
      
 }
@@ -114,18 +133,35 @@ background-color:  #34e5a6;
     
 }
 .imgflot{
-    animation-name: move;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+@-webkit-keyframes move {
+    from{
+        -webkit-transform: translateY(-70px);
+                transform: translateY(-70px)
+    }
+    to{
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px)
+    }
 }
 @keyframes move {
     from{
-        transform: translateY(-70px)
+        -webkit-transform: translateY(-70px);
+                transform: translateY(-70px)
     }
     to{
-        transform: translateY(30px)
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px)
     }
 }
 /*----------feature-----*/
