@@ -315,6 +315,12 @@
   })
 })
  </script>
+ <script>
+     window.addEventListener("scroll",() => {
+         const navlay =document.querySelector(".navbar");
+         navlay.classList.toggle("sticky",window.scrollY>0)
+     })
+ </script>
     <script>
         AOS.init();
       </script> 
