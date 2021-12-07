@@ -45,6 +45,9 @@ opacity: 1;
     background-color:black ;
   
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 body{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("istockphoto-1271067395-170667a.jpg");;
     background-color: black;
@@ -52,6 +55,10 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+   
+
  
 }
 /*----------header-----*/
