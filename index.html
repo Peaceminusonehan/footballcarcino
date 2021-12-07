@@ -15,15 +15,17 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/path/to/cdn/jquery.min.js"></script>
-<script src="/path/to/src/countfect.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet"  href="css/style.css"/>
 <link rel="stylesheet"  href="style.css"/>
 <link rel="stylesheet" href="media.css" />
 <link rel="stylesheet"  href="fontawesome.css"/>
-    
+
+
 </head>
 <body>
-    <nav class="navbar" id="toplay">
-     <div class="container opanvan"><div>
+    <nav class="navbar"  >
+     <div class="container opanvan" ><div>
             <h1>99Sport</h1>
         </div>
         <div class="navmenu"> 
@@ -34,8 +36,23 @@
         </ul>
         </div>
      <div class="hamlay">
+        <div class="humburger" id="hambuger_menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
         </div> 
     </nav>
+    <section class="menu_body" id="menubody">
+        <div class="menu_body__item_wrapper">
+          <!-- menu list-->
+          <ul class="menu_list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#gallary">Gallery</a></li>
+          </ul>
+        </div>
+      </section>
     <header class="container head" >
         <div class="row">
             <div class="col-lg-7 headcol1" data-aos="zoom-in"  data-aos-duration="3000" >
@@ -58,10 +75,9 @@
     <section>
         <div class="cucer"  data-aos="fade-up"
         data-aos-anchor="#trigger-right"  data-aos-duration="1500">
-          <a class="topa" href="#toplay">
+        <a class="topa" href="#">
             <i class="fas fa-arrow-up" ></i>
           </a>
-            
         </div>
     </section>
     <section class="background" id="feature">
@@ -123,26 +139,26 @@
       
        
     </section>
-    <section class="counter">
+    <section class="counter1">
        <div class="container">
         <div class="row count" data-aos="fade-up"  data-aos-duration="2000"
         data-aos-anchor-placement="center-bottom">
            <div class="col-lg-3 box2">
             <i class="far fa-smile-beam smile"></i>
-            <span  data-num="232113"  class="spancount countfect"></span>
+            <span  data-num="232113"  class="spancount countfect counter"  data-TargetNum="4200" data-Speed="1000">0</span>
             <span>Happy Players</span>
            </div>
            <div class="col-lg-3  box2 ">  
             <i class="fas fa-clipboard-list smile"></i>
-            <span  data-num="521"  class="spancount countfect"></span>
+            <span  data-num="521"  class="spancount countfect counter"  data-TargetNum="4200" data-Speed="1000">0</span>
             <span>Clups</span></div>
            <div class="col-lg-3 box2 "> 
             <i class="fas fa-headphones-alt smile"></i>
-            <span data-num="1463" class="spancount countfect"></span>
+            <span   data-num="1463" class="spancount countfect counter"  data-TargetNum="4200" data-Speed="1000">0</span>
             <span>Hours Of Support</span></div>
            <div class="col-lg-3  box2 "> 
             <i class="fas fa-users smile"></i>
-            <span  data-num="15"  class="spancount countfect"></span>
+            <span  data-num="15"   class="spancount countfect counter"  data-TargetNum="4200" data-Speed="1000">0</span>
             <span>Hard Workers</span></div>
         </div>
     </div> 
@@ -260,23 +276,45 @@
             </div>
          </div>
     </section>
-    <footer class="food">
+    <footer class="food" id="foot">
          <div class="container footbox"  data-aos="fade-up"  data-aos-duration="2000"
          data-aos-anchor-placement="bottom-">
             © Copyright
             <strong>99Sport</strong>.All Rights Reserved
             <div>
-                Hand-Crafted & Made With<i class="far fa-heart" "></i>
+                Hand-Crafted & Made With<i class="far fa-heart" ></i>
                 <span class="footspan">Chail</span>
              </div>
          </div>
         
     </footer>
 <script src="/path/to/cdn/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/path/to/src/countfect.min.js"></script>
-<script src="jquery.js"></script>
 <script src="countfect.min.js"></script>
+<script src="jquery.js"></script>
+ <script>
+     $(document).ready(function () {
+  var display_width = $(window).width();
+  var hamburger = $("#hambuger_menu");
+  var menu = $("#menubody");
+  $(hamburger).click(function (e) {
+    menu.toggleClass("open");
+    hamburger.toggleClass("open");
+  });
+  $(".menu_body__item_wrapper li.has_child").each(function (index) {
+    $(this).click(function (event) {
+      $('.sub-menu').eq(index).slideToggle();
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    });
+    $('.sub-menu').click(function (e){
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+    })
+  })
+})
+ </script>
     <script>
         AOS.init();
       </script> 
